@@ -11,6 +11,7 @@ namespace RegexUserRegistration
             RegexClass code = new RegexClass();
             Console.WriteLine("1 - Enter First Name");
             Console.WriteLine("2 - Enter Last Name");
+            Console.WriteLine("3 - Enter Enail-id");
             int select = Convert.ToInt32(Console.ReadLine());
             switch (select)
             {
@@ -24,9 +25,15 @@ namespace RegexUserRegistration
                     string lastName = Console.ReadLine();
                     code.name(lastName);
                     break;
+                case 3:
+                    Console.WriteLine("Enter Enail-id");
+                    string id = Console.ReadLine();
+                    code.email(id);
+                    break;
+
 
             }
-            
+
 
         }
     }
