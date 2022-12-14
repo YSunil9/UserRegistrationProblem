@@ -13,6 +13,7 @@ namespace RegexUserRegistration
             Console.WriteLine("2 - Enter Last Name");
             Console.WriteLine("3 - Enter Enail-id");
             Console.WriteLine("4 - Enter Mobile Number");
+            Console.WriteLine("5 - Enter The Password");
             int select = Convert.ToInt32(Console.ReadLine());
             switch (select)
             {
@@ -35,6 +36,11 @@ namespace RegexUserRegistration
                     Console.WriteLine("Enter Mobile Number");
                     string number = Console.ReadLine();
                     code.MobileNumber(number);
+                    break;
+                case 5:
+                    Console.WriteLine("Enter The Password");
+                    string Password = Console.ReadLine();
+                    code.Password(Password);
                     break;
             }
         }
