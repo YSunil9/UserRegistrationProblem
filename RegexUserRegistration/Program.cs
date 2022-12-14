@@ -19,6 +19,11 @@ namespace RegexUserRegistration
                     string firstName = Console.ReadLine();
                     code.name(firstName);
                     break;
+                case 2:
+                    Console.WriteLine("Enter Last Name");
+                    string lastName = Console.ReadLine();
+                    code.name(lastName);
+                    break;
 
             }
             
